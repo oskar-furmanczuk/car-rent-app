@@ -55,7 +55,6 @@ public class ClientController {
 	public String saveClient(@Valid @ModelAttribute("client") Client client, BindingResult br) {
 		
 		if (br.hasErrors()) {
-			System.out.println(br.getAllErrors());
 			return "new_client";
 		}
 		

@@ -27,7 +27,7 @@ public class Car {
 	
 	@Column(name = "model")
 	@NotBlank(message = "Model name cannot be blank")
-	@Size(min=2, max=20, message = "Model name must be from 2 to 20 characters long")
+	@Size(min=2, max=10, message = "Model name must be from 2 to 10 characters long")
 	private String model;
 	
 	@Column(name = "license_plate")

@@ -49,7 +49,6 @@ public class CarController {
 	public String saveCar(@Valid @ModelAttribute("car") Car car, BindingResult br) {
 		
 		if (br.hasErrors()) {
-			System.out.println(br.getAllErrors());
 			return "new_car";
 		}
 		

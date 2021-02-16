@@ -23,14 +23,14 @@ public class Client {
 	
 	@Column(name = "first_name")
 	@NotBlank(message = "First name cannot be blank")
-	@Size(min=3, max=20, message = "First name must be from 3 to 20 characters long")
+	@Size(min=3, max=10, message = "First name must be from 3 to 10 characters long")
 	@Pattern(regexp="^[A-Za-z]*$", message = "First name must contain only letters (ASCII encoding only)")
 	String firstName;
 	
 	@Column(name = "last_name")
 	@NotBlank(message = "Last name cannot be blank")
 	@Pattern(regexp="^[A-Za-z]*$",message = "Last name must contain only letters (ASCII encoding only)")
-	@Size(min=3, max=20, message = "Last name must be from 3 to 20 characters long")
+	@Size(min=3, max=10, message = "Last name must be from 3 to 10 characters long")
 	private String lastName;
 	
 	

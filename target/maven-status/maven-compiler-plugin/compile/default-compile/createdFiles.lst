@@ -1,0 +1,12 @@
+OskarFurmanczuk\carrentapp\controller\StartController.class
+OskarFurmanczuk\carrentapp\CarRentingApplication.class
+OskarFurmanczuk\carrentapp\service\CarService.class
+OskarFurmanczuk\carrentapp\service\ClientServiceImpl.class
+OskarFurmanczuk\carrentapp\repository\CarRepository.class
+OskarFurmanczuk\carrentapp\controller\CarController.class
+OskarFurmanczuk\carrentapp\service\CarServiceImpl.class
+OskarFurmanczuk\carrentapp\model\Car.class
+OskarFurmanczuk\carrentapp\model\Client.class
+OskarFurmanczuk\carrentapp\controller\ClientController.class
+OskarFurmanczuk\carrentapp\repository\ClientRepository.class
+OskarFurmanczuk\carrentapp\service\ClientService.class
