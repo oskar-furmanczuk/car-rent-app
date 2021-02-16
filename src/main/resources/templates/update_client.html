@@ -21,13 +21,17 @@
 			<input type="hidden" th:field="*{id}" />
 			<input type="hidden" th:field="*{car}" />
 			
+			<span class="text-danger" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
 			<input type="text" th:field="*{firstName}" class="form-control mb-4 col-4">
+			
+			<span class="text-danger" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>	
+			<input type="text" th:field="*{lastName}" class="form-control mb-4 col-4">
+			
+			<span class="text-danger" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+			<input type="text" th:field="*{phoneNumber}" class="form-control mb-4 col-4">
 				
-				<input type="text" th:field="*{lastName}" class="form-control mb-4 col-4">
-				
-				<input type="text" th:field="*{phoneNumber}" class="form-control mb-4 col-4">
-				
-				<button type="submit" class="btn btn-info col-2"> Update Client</button>
+			<button type="submit" class="btn btn-info col-2"> Update Client</button>
+			
 		</form>
 		
 		<hr>

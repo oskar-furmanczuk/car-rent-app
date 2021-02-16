@@ -17,16 +17,17 @@
 
 		<form action="#" th:action="@{/car/saveCar}" th:object="${car}"
 			method="POST">
-			<input type="text" th:field="*{brand}"
-				placeholder="Brand" class="form-control mb-4 col-4">
+			
+			<span class="text-danger" th:if="${#fields.hasErrors('brand')}" th:errors="*{brand}"></span>
+			<input type="text" th:field="*{brand}" placeholder="Brand" class="form-control mb-4 col-4">
+			
+			<span class="text-danger" th:if="${#fields.hasErrors('model')}" th:errors="*{model}"></span>
+			<input type="text" th:field="*{model}" placeholder="Model" class="form-control mb-4 col-4">
 				
-				<input type="text" th:field="*{model}"
-				placeholder="Model" class="form-control mb-4 col-4">
+			<span class="text-danger" th:if="${#fields.hasErrors('licesnsePlate')}" th:errors="*{licesnsePlate}"></span>
+			<input type="text" th:field="*{licesnsePlate}" placeholder="Licesnse Plate" class="form-control mb-4 col-4">
 				
-				<input type="text" th:field="*{licesnsePlate}"
-				placeholder="Licesnse Plate" class="form-control mb-4 col-4">
-				
-				<button type="submit" class="btn btn-info col-2"> Save Car</button>
+			<button type="submit" class="btn btn-info col-2"> Save Car</button>
 		</form>
 		
 		<hr>
